@@ -104,7 +104,7 @@ app.get("*", function (req, res) {
   );
 }); 
 
-const PORT = 5000 || process.env.PORT;
+const PORT = process.env.PORT || 3002;
 app.listen(PORT, function () {
     console.log(`Server is running on port ${PORT}`);
 });
